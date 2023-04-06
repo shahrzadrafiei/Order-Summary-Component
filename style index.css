@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+article h1 {
+    display: grid;
+    flex-direction: row;
+}
+
+.main-img {
+    border-radius:  20px 20px 0 0;
+}
+
+main {
+    width: 450px;
+    height: 600px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 20px;
+    background-color: hsl(225, 100%, 98%);
+}
+
+.main-article {
+    padding: 40px;
+    line-height: 25px;
+}
+
+.main-article h1 {
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    margin-bottom: 20px;
+}
+
+.main-article p {
+    font-size: 16px;
+    color: hsl(224, 23%, 55%);
+}
+
+.container {
+    display: flex;
+    justify-content: start;
+    margin: 20px;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: hsl(228, 19%, 95%);
+    padding: 10px;
+}
+
+.prices {
+    text-align: left;
+}
+
+.prices h3 {
+    font-weight: 700;
+    color: hsl(223, 47%, 23%);
+}
+
+.container a {
+    margin: auto;
+    font-size: 16px;
+    font-weight: 700;
+    color: hsl(245, 75%, 52%);
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    padding: 10px;
+    margin: auto;
+    width: 20rem;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: all 0.2 ease-in;
+}
+
+.payment {
+    background-color: hsl(245, 75%, 52%);
+    color: hsl(225, 100%, 98%);
+}
+
+.cancel {
+    color: hsl(224, 23%, 55%);
+    line-height: 40px;
+}
+
+.payment:hover {
+    background-color: hsl(245, 56%, 52%);
+}
+
+.cancel:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+.container a:hover {
+    text-decoration: none;
+    color: hsl(245, 56%, 52%);
+}
+
+@media screen and (max-width:450px) {
+    body {
+        background-image: url("images/pattern-background-mobile.svg");
+    }
+}
+
+
+.attribution { font-size: 16px; text-align: center; padding: 40px;}
+.attribution a { color: hsl(228, 45%, 44%); }
